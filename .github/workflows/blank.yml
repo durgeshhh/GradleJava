@@ -14,11 +14,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # setup java 
-      - name: Setup SDK 11
-        uses: actions/setup-java@V2
+      - name: Setup SDK 14
+        uses: actions/setup-java@v2
         with:
-          java-version: '11'
+          java-version: '14'
           distribution: 'adopt'
+          
       - name: Checkout our code
         uses: actions/checkout@v2
         
